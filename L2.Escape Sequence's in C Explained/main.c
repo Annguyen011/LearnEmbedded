@@ -2,7 +2,7 @@
 
 int main() {
     // Using escape sequences to print special characters
-    printf("Hello, World!\n"); // New line
+    printf("Hello, \t World!\n"); // New line
     printf("This is a tab:\tTabbed text\n"); // Tab character
     printf("This is a backslash: \\\n"); // Backslash
     printf("This is a single quote: '\n"); // Single quote
@@ -11,3 +11,4 @@ int main() {
 
     return 0;
 }   
+
