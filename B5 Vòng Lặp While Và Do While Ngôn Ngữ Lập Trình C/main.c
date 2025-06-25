@@ -17,4 +17,5 @@ int main()
         i++;
     } while (i < 5);  // Loop will run 5 times
     
+    return 0;
 }
