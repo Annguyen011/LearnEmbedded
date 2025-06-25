@@ -17,4 +17,16 @@ int main()
     } else {
         printf("Not a leap year\n");
     }
+
+    char c;
+    scanf(" %c", &c);
+    if(c >= 'A' && c <= 'Z') {
+        printf("Uppercase letter\n");
+    } else if(c >= 'a' && c <= 'z') {
+        printf("Lowercase letter\n");
+    } else if(c >= '0' && c <= '9') {
+        printf("Digit\n");
+    } else {
+        printf("Special character\n");
+    }
 }
