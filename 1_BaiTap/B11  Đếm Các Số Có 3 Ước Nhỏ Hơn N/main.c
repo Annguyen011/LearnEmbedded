@@ -22,7 +22,7 @@ void sieveOfEratosthenes() {
 int main()
 {
     sieveOfEratosthenes();
-    cnt = 0;
+    int cnt = 0;
     int n;
     printf("Nhap n: ");
     scanf("%d", &n);
