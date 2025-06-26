@@ -46,19 +46,23 @@ int main() {
     sieveOfEratosthenes();
     
     int n;
-    printf("Enter a number to check if it is prime: ");
+    printf("Nhap n: ");
     scanf("%d", &n);
-    
     if (n < 0 || n > MAX) {
-        printf("Number out of range. Please enter a number between 0 and %d.\n", MAX);
+        printf("Nhap n trong khoang tu 0 den %d\n", MAX);
         return 1;
     }
-    
-    if (isPrime[n]) {
-        printf("%d is a prime number.\n", n);
+    if (isPrime[n] && csnt(n) && tongNguyenTo(n)) {
+        printf("%d la so nguyen to thuan nguyen to\n", n);
     } else {
-        printf("%d is not a prime number.\n", n);
+        printf("%d khong phai la so nguyen to thuan nguyen to\n", n);
     }
-    
+    printf("Tong cac chu so cua %d la: ", n);
+    int sum = 0, temp = n;
+    while (temp) {
+        sum += temp % 10;
+        temp /= 10;
+    }
+    printf("%d\n", sum);
     return 0;
 }
