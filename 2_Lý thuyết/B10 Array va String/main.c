@@ -32,15 +32,35 @@ int	main(int argc, char **argv)
     // system("pause");
     // return 0;
 
-    string str;
-    printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);
-    // Remove newline character if present
-    str[strcspn(str, "\n")] = 0;
-    printf("You entered: %s\n", str);
-    printf("Length of the string: %zu\n", strlen(str));
-    printf("Reversed string: ");
-    for (int i = strlen(str) - 1; i >= 0; i--) {
-        putchar(str[i]);
-    }
+    // string str;
+    // printf("Enter a string: ");
+    // fgets(str, sizeof(str), stdin);
+    // // Remove newline character if present
+    // str[strcspn(str, "\n")] = 0;
+    // printf("You entered: %s\n", str);
+    // printf("Length of the string: %zu\n", strlen(str));
+    // printf("Reversed string: ");
+    // for (int i = strlen(str) - 1; i >= 0; i--) {
+    //     putchar(str[i]);
+    // }
+
+    // char *str = (char *)malloc(100 * sizeof(char));
+    // if (str == NULL) {
+    //     fprintf(stderr, "Memory allocation failed\n");
+    //     return 1;
+    // }
+    // printf("Enter a string: ");
+    // fgets(str, 100, stdin);
+    // // Remove newline character if present
+    // str[strcspn(str, "\n")] = 0;
+
+    // printf("You entered: %s\n", str);
+    // printf("Length of the string: %zu\n", strlen(str));
+    // printf("Reversed string: ");
+    // for (int i = strlen(str) - 1; i >= 0; i--) {
+    //     putchar(str[i]);
+    // }   
+
+    char* str = "Hello, World!";
+    printf("Original string: %s\n", str);
 }
