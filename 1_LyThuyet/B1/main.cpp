@@ -1,6 +1,8 @@
+#pragma region LIBRARIES
 #include<iostream>
-
+#include<iomanip>
 using namespace std;
+#pragma endregion
 
 void printMessage(const string &message)
 {
@@ -18,8 +20,33 @@ void printMessage(const string &message)
     system("pause");
 }
 
+void hocToanTuSoSanh()
+{
+    int a = 5, b = 10;
+    if (a < b)
+        cout << "a is less than b" << endl;
+    else if (a > b)
+        cout << "a is greater than b" << endl;
+    else
+        cout << "a is equal to b" << endl;
+}
+
+void hocReNhanh()
+{
+    int a = 5, b = 10;
+    if (a < b)
+        cout << "a is less than b" << endl;
+    else if (a > b)
+        cout << "a is greater than b" << endl;
+    else
+        cout << "a is equal to b" << endl;
+}
+
 int	main(int argc, char **argv)
 {
+    double pi = 3.14159;
+    cout << fixed << setprecision(5);
+    cout << "Value of pi: " << pi << endl;
     
     return 0;
 }
