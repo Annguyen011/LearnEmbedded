@@ -22,6 +22,14 @@ using namespace std;
 //#endregion
 
 int main() {
-    // TODO: Viết code ở đây
+    // Toán tử gán và toán tử số học
+
+    int a = 5; // Toán tử gán
+    int b = 10; // Toán tử gán
+    int sum = a + b; // Toán tử số học
+    int difference = b - a; // Toán tử số học
+    int product = a * b; // Toán tử số học
+    int quotient = b / a; // Toán tử số học
+    int remainder = b % a; // Toán tử số học
     return 0;
 }

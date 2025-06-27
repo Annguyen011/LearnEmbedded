@@ -22,6 +22,8 @@ using namespace std;
 //#endregion
 
 int main() {
-    // TODO: Viết code ở đây
+    // Hang so troong c++
+    const double PI = 3.14159265358979323846;
+    
     return 0;
 }
