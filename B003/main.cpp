@@ -1,27 +1,14 @@
-//#region Thư viện C++ chuẩn
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-#include <map>
-#include <set>
-#include <unordered_map>
-#include <unordered_set>
-#include <stack>
-#include <queue>
-#include <deque>
-#include <bitset>
-#include <cassert>
-#include <climits>
-#include <cctype>
-#include <cstring>
-using namespace std;
-//#endregion
+const int ledPin = 19;     // LED nối chân GPIO23
+const int buttonPin = 16;  // Nút nhấn nối chân GPIO16
 
-int main() {
-    // TODO: Viết code ở đây
-    return 0;
+void setup() {
+  pinMode(ledPin, OUTPUT);       // Đặt chân LED là output
+      // Đặt chân nút là input
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);
+  delay(200);
+  digitalWrite(ledPin, LOW);
+   // Chống nhiễu (debounce nhẹ)
 }
