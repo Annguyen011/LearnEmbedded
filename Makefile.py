@@ -3,32 +3,15 @@ import os
 
 def generate_main_cpp_content():
     return '''\
-//#region Thư viện C++ chuẩn
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-#include <map>
-#include <set>
-#include <unordered_map>
-#include <unordered_set>
-#include <stack>
-#include <queue>
-#include <deque>
-#include <bitset>
-#include <cassert>
-#include <climits>
-#include <cctype>
-#include <cstring>
-using namespace std;
-//#endregion
+#include<android/log.h>
+#include <Arduino.h>
 
-int main() {
-    // TODO: Viết code ở đây
-    return 0;
+void setup() {
+    Serial.begin(115200);
+    delay(1000); // Wait for serial to initialize
+}
+void loop() {
+    
 }
 '''
 
