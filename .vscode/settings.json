@@ -55,5 +55,16 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+
+  // ESP-IDF configuration
+  "idf.espIdfPath": "c:/Espressif/frameworks/esp-idf-v5.4.2",
+  "idf.toolsPath": "c:/Espressif",
+  "idf.pythonBinPath": "c:/Espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe",
+  "idf.customExtraPaths": "c:/Espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin",
+  "idf.customExtraVars": {
+    "IDF_PYTHON_ENV_PATH": "c:/Espressif/python_env/idf5.4_py3.11_env"
+  },
+  "cmake.sourceDirectory": "E:/LapTrinhNhung/Step3-a/Demo1",
+  "idf.pythonInstallPath": "E:\\Espressif\\tools\\idf-python\\3.11.2\\python.exe"
 }
