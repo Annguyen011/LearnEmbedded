@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include "freertos/FreeRTOS.h"
+#include "driver/gpio.h"
 
 #define LED_PIN 2
 #define BUTTON_PIN 5 // Assuming a button is connected to GPIO 0
