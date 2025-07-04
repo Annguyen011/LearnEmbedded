@@ -1,0 +1,3 @@
+﻿Sử dụng thư viện Wifi.h
+Wifi.mode: Trạng thái station là ta có mỗi thiết bị cuối và ESP32 là station còn Router là Acesspoint để ta sử dụng để truyền dữ liệu cho nhau
+Wifi.mode: Trạng thái access point đóng vai trò như một mạng Wifi 
