@@ -24,13 +24,12 @@ void app_main(void)
         return;
     }
 
+    uint8_t blink_state = 0; // Initial state for blinking
+
     for(;;)
     {
-        gpio_set_level(GPIO_NUM_2, 1); // Set GPIO 2 high
-        ESP_LOGI("GPIO", "GPIO 2 set to HIGH");
-        vTaskDelay(pdMS_TO_TICKS(1000)); // Wait for 1 second
-        gpio_set_level(GPIO_NUM_2, 0); // Set GPIO 2 low
-        ESP_LOGI("GPIO", "GPIO 2 set to LOW");
+        gpio_set_level(GPIO_NUM_2, blink_state); // Set GPIO 2 high
+        blink_state = !blink_state; // Update blink state
         vTaskDelay(pdMS_TO_TICKS(1000)); // Wait for 1 second
     }
 }
